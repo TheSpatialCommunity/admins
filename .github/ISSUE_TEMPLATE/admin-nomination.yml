@@ -10,7 +10,7 @@ body:
         as long as you like, and **every field is optional** but more detail helps us understand what kinds
         of tasks you would help with as an admin.
 
-        You may wish to refer to our [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md) to better understand roles that the nominee would fill.
+       Please refer to our [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md) to better understand roles that the nominee would fill.
 
         Currently, admins are selected by the existing admin team after comment from the broader community.
         A nomination here is the first step toward getting comments.
@@ -60,7 +60,7 @@ body:
     id: next-section
     attributes:
       value: |
-        The following questions are best filled out by self-nominees. If you are nominating someone else, you can skip
+        **The following questions are best filled out by self-nominees**. If you are nominating someone else, you can skip
         over these questions and the nominee can fill it out when they submit their own nomination.
   - type: textarea
     id: currently-like
@@ -79,8 +79,8 @@ body:
   - type: textarea
     id: support
     attributes:
-      label: Which of the [listed admin tasks](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md) would you be most able to support?
-      description: Admins don't need to do all the tasks, but we need to build a team that covers all the roles well.
+      label: Which of the listed admin tasks would you be most able to support?
+      description: [Admin tasks for reference](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md). Admins don't need to do all the tasks, but we need to build a team that covers all the roles well.
     validations:
       required: false
   - type: textarea
