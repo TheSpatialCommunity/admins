@@ -80,7 +80,7 @@ body:
     id: support
     attributes:
       label: Which of the listed admin tasks would you be most able to support?
-      description: [Admin tasks for reference](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md). Admins don't need to do all the tasks, but we need to build a team that covers all the roles well.
+      description: See [admin tasks for reference](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md). Admins don't need to do all the tasks, but we need to build a team that covers all the roles well.
     validations:
       required: false
   - type: textarea
