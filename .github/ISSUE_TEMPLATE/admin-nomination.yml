@@ -95,7 +95,7 @@ body:
     attributes:
       label: Where in the world are you located, and what timezone are you in?
       description: LWe strive to have a global admin team for representation and covering all times with support.
-      placeholder: California, UTC+8 (or US/Pacific)
+      placeholder: e.g. "California, UTC+8" or "France, CET"
     validations:
       required: false
   - type: markdown
