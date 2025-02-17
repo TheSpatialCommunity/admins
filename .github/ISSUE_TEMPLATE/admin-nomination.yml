@@ -1,8 +1,6 @@
 name: Admin Nomination
-about: Submit this issue to nominate yourself or another person as an admin
+description: Submit this issue to nominate yourself or another person as an admin
 title: "[NOMINATION]"
-labels: ''
-assignees: ''
 body:
   - type: markdown
     attributes:
