@@ -6,20 +6,19 @@ body:
     id: overview
     attributes:
       value: |
-        Please submit this form to nominate yourself or someone else as an admin. This can be as short
-        or as long as you like, and **every field is optional** but more detail helps us understand what kinds of tasks you would help
-        with as an admin.
+        Please submit this form to nominate yourself or someone else as an admin. This can be as short or
+        as long as you like, and **every field is optional** but more detail helps us understand what kinds
+        of tasks you would help with as an admin.
 
-        You may wish to refer to our [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md)
-        to better understand roles that the nominee would fill.
+        You may wish to refer to our [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md) to better understand roles that the nominee would fill.
 
         Currently, admins are selected by the existing admin team after comment from the broader community.
         A nomination here is the first step toward getting comments.
   - type: checkboxes
     id: read-the-details
     attributes:
-      label: I have looked at the [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md)
-      description: Make sure you understand the role of the admins in this community before nominating. 
+      label: I have looked at the list of tasks admins do.
+      description: Make sure you understand the [role of the admins](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md) in this community before nominating. 
       options:
         - label: The person I am nominating would be able to support one or more of the items in the listed admin tasks.
           required: true
