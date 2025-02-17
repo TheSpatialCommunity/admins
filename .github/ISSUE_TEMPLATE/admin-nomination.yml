@@ -5,56 +5,91 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+        Please submit this form to nominate yourself or someone else as an admin. This can be as short
+        or as long as you like, and **every field is optional** but more detail helps us understand what kinds of tasks you would help
+        with as an admin.
+
+        You may wish to refer to our [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md)
+        to better understand roles that the nominee would fill.
+
+        Currently, admins are selected by the existing admin team after comment from the broader community.
+        A nomination here is the first step toward getting comments.
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      label: I have looked at the [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md)
+      description: Make sure you understand the role of the admins in this community before nominating. 
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: The person I am nominating would be able to support one or more of the items in the listed admin tasks.
           required: true
+  - type: input
+    id: nominee
+    attributes:
+      label: The Spatial Community User You Are Nominating
+      description: What is the username or display name of the user you are nominating in The Spatial Community? If the display name is ambiguous, make sure to use the username (this one is not optional)
+      placeholder: 
+    validations:
+      required: true
+  - type: dropdown
+    id: nominating_for
+    attributes:
+      label: Nominating for
+      description: Are you nominating yourself, or someone else?
+      options:
+        - Self
+        - Someone else
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: nominator
+    attributes:
+      label: Your Spatial Community Username
+      description: If you are nominating someone else, then include your own username here. Optional otherwise.
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
+    id: why_a_fit
+    attributes:
+      label: Why are you nominating this person?
+      description: What would make this person (or youself) a good admin in the community, and what roles could they fill and support?
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        The following questions are best filled out by self-nominees. If you are nominating someone else, you can skip
+        over these questions and the nominee can fill it out when they submit their own nomination.
+  - type: textarea
+    id: why_a_fit
+    attributes:
+      label: What do you currently like about the community?
+      description: What are the aspects of the community you currently like and that you would like to continue or preserve?
+    validations:
+      required: false
+  - type: textarea
+    id: what_change
+    attributes:
+      label: What would you consider changing about the community, if anything?
+      description: 
+    validations:
+      required: false
+  - type: textarea
+    id: support
+    attributes:
+      label: Which of the [listed admin tasks](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md) would you be most able to support?
+      description: Admins don't need to do all the tasks, but we need to build a team that covers all the roles well.
+    validations:
+      required: false
+  - type: textarea
+    id: special_skills
+    attributes:
+      label: Any other special skills or relevant experience?
+      description: List any other skills here that might be relevent (such as creating Python Slack bots, maintaining websites, etc), or experience (such as community moderation_)
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! We're looking to broaden and diversify our admin team. We're looking forward to reviewing your nomination.
