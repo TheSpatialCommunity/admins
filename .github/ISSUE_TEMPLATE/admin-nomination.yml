@@ -54,6 +54,7 @@ body:
     attributes:
       label: Why are you nominating this person?
       description: What would make this person (or youself) a good admin in the community
+    validations:
       required: false
   - type: markdown
     id: next-section
