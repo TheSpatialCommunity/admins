@@ -3,7 +3,8 @@ about: Submit this issue to nominate yourself or another person as an admin
 title: "[NOMINATION]"
 labels: ''
 assignees: ''
-- type: markdown
+body:
+  - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
