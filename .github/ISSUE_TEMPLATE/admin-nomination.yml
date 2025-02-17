@@ -53,15 +53,14 @@ body:
     id: why-a-fit
     attributes:
       label: Why are you nominating this person?
-      description: What would make this person (or youself) a good admin in the community, and what roles could they fill and support?
-    validations:
+      description: What would make this person (or youself) a good admin in the community
       required: false
   - type: markdown
     id: next-section
     attributes:
       value: |
-        **The following questions are best filled out by self-nominees**. If you are nominating someone else, you can skip
-        over these questions and the nominee can fill it out when they submit their own nomination.
+        **The following questions are best filled out by self-nominees**. If you are nominating someone else, you may wish
+        to skip over these questions and the nominee can fill it out when they submit their own nomination.
   - type: textarea
     id: currently-like
     attributes:
@@ -88,6 +87,14 @@ body:
     attributes:
       label: Any other special skills or relevant experience?
       description: List any other skills here that might be relevent (such as creating Python Slack bots, maintaining websites, etc), or experience (such as community moderation_)
+    validations:
+      required: false
+  - type: textarea
+    id: where-in-the-world
+    attributes:
+      label: Where in the world are you located, and what timezone are you in?
+      description: LWe strive to have a global admin team for representation and covering all times with support.
+      placeholder: California, UTC+8 (or US/Pacific)
     validations:
       required: false
   - type: markdown
