@@ -3,6 +3,7 @@ description: Submit this issue to nominate yourself or another person as an admi
 title: "[NOMINATION]"
 body:
   - type: markdown
+    id: overview
     attributes:
       value: |
         Please submit this form to nominate yourself or someone else as an admin. This can be as short
@@ -15,7 +16,7 @@ body:
         Currently, admins are selected by the existing admin team after comment from the broader community.
         A nomination here is the first step toward getting comments.
   - type: checkboxes
-    id: terms
+    id: read-the-details
     attributes:
       label: I have looked at the [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md)
       description: Make sure you understand the role of the admins in this community before nominating. 
@@ -31,7 +32,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: nominating_for
+    id: nominating-for
     attributes:
       label: Nominating for
       description: Are you nominating yourself, or someone else?
@@ -50,26 +51,27 @@ body:
     validations:
       required: false
   - type: textarea
-    id: why_a_fit
+    id: why-a-fit
     attributes:
       label: Why are you nominating this person?
       description: What would make this person (or youself) a good admin in the community, and what roles could they fill and support?
     validations:
       required: false
   - type: markdown
+    id: next-section
     attributes:
       value: |
         The following questions are best filled out by self-nominees. If you are nominating someone else, you can skip
         over these questions and the nominee can fill it out when they submit their own nomination.
   - type: textarea
-    id: why_a_fit
+    id: currently-like
     attributes:
       label: What do you currently like about the community?
       description: What are the aspects of the community you currently like and that you would like to continue or preserve?
     validations:
       required: false
   - type: textarea
-    id: what_change
+    id: what-change
     attributes:
       label: What would you consider changing about the community, if anything?
       description: 
@@ -83,13 +85,14 @@ body:
     validations:
       required: false
   - type: textarea
-    id: special_skills
+    id: special-skills
     attributes:
       label: Any other special skills or relevant experience?
       description: List any other skills here that might be relevent (such as creating Python Slack bots, maintaining websites, etc), or experience (such as community moderation_)
     validations:
       required: false
   - type: markdown
+    id: thanks
     attributes:
       value: |
         Thank you! We're looking to broaden and diversify our admin team. We're looking forward to reviewing your nomination.
