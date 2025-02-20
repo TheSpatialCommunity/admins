@@ -1,6 +1,7 @@
 name: Admin Nomination
 description: Submit this issue to nominate yourself or another person as an admin
 title: "[NOMINATION]"
+labels: nomination
 body:
   - type: markdown
     id: overview
@@ -11,6 +12,7 @@ body:
         of tasks you would help with as an admin.
 
         Please refer to our [list of tasks admins do](https://github.com/TheSpatialCommunity/documents/blob/base/ADMIN_JOBS.md) to better understand roles that the nominee would fill.
+        You can be new to the community (new people sometimes have the best perspectives) - we just need to see why you care about this community!
 
         Currently, admins are selected by the existing admin team after comment from the broader community.
         A nomination here is the first step toward getting comments.
@@ -91,10 +93,15 @@ body:
     validations:
       required: false
   - type: textarea
+    id: channels
+    attributes:
+      label: What channels do you currently spend time in - or, what are your areas of experience?
+      description:  We want coverage of existing channels with people with some experience and who already know the channel culture.
+  - type: textarea
     id: where-in-the-world
     attributes:
       label: Where in the world are you located, and what timezone are you in?
-      description: LWe strive to have a global admin team for representation and covering all times with support.
+      description: We strive to have a global admin team for representation and covering all times with support.
       placeholder: e.g. "California, UTC+8" or "France, CET"
     validations:
       required: false
